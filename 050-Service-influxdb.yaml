@@ -7,10 +7,6 @@ metadata:
  name: influxdb
 spec:
  ports:
- - name: graphite
-   port: 2003
-   protocol: TCP
-   targetPort: 2003
  - name: admin
    port: 8083
    protocol: TCP

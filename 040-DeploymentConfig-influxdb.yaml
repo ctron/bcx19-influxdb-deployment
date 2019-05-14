@@ -41,13 +41,13 @@ spec:
          initialDelaySeconds: 5
          periodSeconds: 5
          tcpSocket:
-           port: 2003
+           port: 8086
          timeoutSeconds: 1
        livenessProbe:
          initialDelaySeconds: 20
          periodSeconds: 9
          tcpSocket:
-           port: 2003
+           port: 8086
          timeoutSeconds: 1
        ports:
        - containerPort: 8086
@@ -55,9 +55,6 @@ spec:
          protocol: TCP
        - containerPort: 8083
          name: admin
-         protocol: TCP
-       - containerPort: 2003
-         name: graphite
          protocol: TCP
        resources:
          limits:
